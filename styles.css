@@ -87,15 +87,15 @@ p {
 }
 
 
-.contact{
+.list{
   font-style: normal;
   margin: 1rem 0 0;
 }
-.contact__title {
+.list__title {
   text-transform: uppercase;
   font-size: 0.9rem;
 }
-.contact__detail {
+.list__detail {
   margin-bottom: 0.5rem;
 }
 
@@ -106,7 +106,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .main{
-    max-width: 60em;
+    max-width: 54em;
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 3px;
@@ -114,7 +114,7 @@ p {
   }
   .header {
     position: fixed;
-    width: 20rem;
+    width: 16rem;
     border-bottom: none;
     text-align: right;
     top: 1rem;
@@ -129,7 +129,7 @@ p {
   }
   .content {
     float: right;
-    width: calc(100% - 20rem - 1rem);
+    width: calc(100% - 16rem - 1rem);
   }
   body {
     font-size: 1em; /*16px*/

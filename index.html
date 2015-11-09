@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Harsha Ivaturi's Resume</title>
+  <link rel="shortcut icon" href="favicon.ico?v=1.1" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
@@ -14,19 +15,19 @@
     <h1 class="header__title">Harsha Ivaturi</h1>
     <h3 class="header__subtitle">Senior UI Developer</h3>
     <a href="https://harshai.github.io/">https://harshai.github.io/</a>
-    <address class="contact">
+    <address class="list">
       <dl>
-        <dt class="contact__title">Mail</dt>
-        <dd class="contact__detail"><a href="mailto:harsha.ivaturi@gmail.com">harsha.ivaturi@gmail.com</a></dd>
-        <dt class="contact__title">Phone</dt>
-        <dd class="contact__detail"> <a href="tel: +918800699773">+91 8800699773</a></dd>
-        <dt class="contact__title">Skype</dt>
-        <dd class="contact__detail">harsha.ivaturi</dd>
+        <dt class="list__title">Mail</dt>
+        <dd class="list__detail"><a href="mailto:harsha.ivaturi@gmail.com">harsha.ivaturi@gmail.com</a></dd>
+        <dt class="list__title">Phone</dt>
+        <dd class="list__detail"> <a href="tel: +918800699773">+91 8800699773</a></dd>
+        <dt class="list__title">Skype</dt>
+        <dd class="list__detail">harsha.ivaturi</dd>
       </dl>
     </address>
     <div class="header__actions">
       <a class="header__action" href="javascript: window.print();">Print</a> |
-      <a class="header__action" href="https://www.dropbox.com/s/b3bafmje8sqxn1h/Harsha%20Ivaturi%27s%20Resume.pdf?dl=0"> Download PDF</a>
+      <a class="header__action" href="https://www.dropbox.com/s/b3bafmje8sqxn1h/Harsha%20Ivaturi%27s%20Resume.pdf?raw"> Download PDF</a>
     </div>
   </header>
 
@@ -37,15 +38,20 @@
     </section>
     <section class="section">
       <h2 class="section__title">Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>Progressive enhancement</li>
-        <li>ES3/ES5 and basic ES6</li>
-        <li>SASS/LESS</li>
-        <li>Backbone, Canjs, React and Angular</li>
-        <li>Gulp webpack</li>
-        <li>jQuery</li>
-      </ul>
+      <dl class="list">
+          <dt class="list__title">Core Web Technologies</dt>
+          <dl class="list__detail"><strong> HTML, JavaScript (ES3) and CSS </strong></dl>
+          <dt class="list__title">Preprocessors</dt>
+          <dl class="list__detail"><strong>Sass and LESS</strong></dl>
+          <dt class="list__title">Javascript Frameworks</dt>
+          <dl class="list__detail"><strong>Backbone, React and Angular</strong></dl>
+          <dt class="list__title">Front end automation</dt>
+          <dl class="list__detail"><strong>Webpack, Gulp, Grunt, npm</strong></dl>
+          <dt class="list__title">Javascript libraries</dt>
+          <dl class="list__detail"><strong>jQuery, underscore.js/lodash, socket.io</strong></dl>
+          <dt class="list__title">Server Side</dt>
+          <dl class="list__detail">Working knowledge of <strong> Node.js/Io.js, Ruby on Rails and Java</strong></dl>
+      </dl>
     </section>
 
     <section class="section">
@@ -67,17 +73,26 @@
         <li>Progressive enhancement</li>
         <li>Mobile first</li>
         <li>Atomic design</li>
+        <li>Server first, universal web apps</li>
         <li>TDD</li>
-        <li>Object oriented JS</li>
+        <li>Agile development practices</li>
+        <li>Continuous delivery</li>
       </ul>
     </section>
 
     <section class="section">
-      <h2 class="section__title">Pet projects</h2>
+      <h2 class="section__title">Personal projects</h2>
       <ul>
-        <li>Diceware - ES5, uses webcrypto and diceware list</li>
+        <li>
+          <a href="http://harshai.github.io/diceware/">Diceware</a>
+          <div>Built using webcrypto and diceware list</div>
+
+        </li>
         <li>Offline first todo app react+redux, localstorage, appcache</li>
-        <li>Polar clock Canvas - javascript, canvas api</li>
+        <li>
+          <a href="http://harshai.github.io/polar-clock-canvas/">Polar clock canvas</a>
+          <div>Built using Javascript, canvas api </div>
+        </li>
         <li>Hitchbuddy</li>
         <li>jQuery Leech  jQuery</li>
       </ul>
