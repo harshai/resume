@@ -1,0 +1,143 @@
+/* max-width: 1920px;*/
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ul, li, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: #147;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active{
+  text-decoration: none;
+  outline: 1px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0.875em; /*14px*/
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  min-width: 26.25rem;
+}
+.main{
+  padding: 0.5rem 1rem;
+  width: 100%;
+  overflow: auto;
+}
+
+h1, h2, h3 {
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  margin: 0;
+}
+p {
+  /*line-height: 1.25;*/
+}
+
+.section--intro, .section {
+  margin-bottom: 2.5rem;
+}
+.section--intro {
+  background-color:
+}
+.section__title{
+  text-transform: uppercase;
+}
+.header, .section {
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #DDD;
+}
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.header__title {
+  text-transform: none;
+  font-size: 2rem;
+}
+
+.header__subtitle {
+  font-size: 0.9rem;
+}
+
+.header__actions {
+  font-size: 0.9rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+
+.contact{
+  font-style: normal;
+  margin: 1rem 0 0;
+}
+.contact__title {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.contact__detail {
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  margin-top: 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .main{
+    max-width: 60em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px #CDCDCD;
+  }
+  .header {
+    position: fixed;
+    width: 20rem;
+    border-bottom: none;
+    text-align: right;
+    top: 1rem;
+  }
+  .header__actions {
+    position: static;
+    margin-top: 4rem;
+  }
+  .section{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .content {
+    float: right;
+    width: calc(100% - 20rem - 1rem);
+  }
+  body {
+    font-size: 1em; /*16px*/
+  }
+ }
+
+ @media only screen and (max-width: 23.25rem) {
+    .header__actions{
+      display: none;
+    }
+ }

@@ -4,53 +4,103 @@
   <meta charset="UTF-8">
   <title>Harsha Ivaturi's Resume</title>
   <link rel="stylesheet" href="styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <h2>Techniques</h2>
-  <ul>
-    <li>Progressive enhancement</li>
-    <li>Mobile first</li>
-    <li>TDD</li>
-    <li>Atomic design</li>
-  </ul>
-  <h2>Skills</h2>
-  <ul>
-    <li>HTML</li>
-    <li>Progressive enhancement</li>
-    <li>ES3/ES5 and basic ES6</li>
-    <li>SASS/LESS</li>
-    <li>Backbone, Canjs, React and Angular</li>
-    <li>Gulp webpack</li>
-    <li>jQuery</li>
-  </ul>
-  <h2>Professional</h2>
-  <ul>
-    <li>PeopleFluent</li>
-    <li>Channel4</li>
-    <li>Iba</li>
-    <li>HCAH</li>
-    <li>Indigo</li>
-    <li>MoM</li>
-    <li>Xenex</li>
-  </ul>
-  <h2>Pet projects</h2>
+<main class="main">
 
-  <ul>
-    <li>Diceware</li>
-    <li>Offline first todo app</li>
-    <li>Polar clock (SVG, React, Canvas, ractive)</li>
-    <li>Hitchbuddy</li>
-    <li> jQuery Leech </li>
-  </ul>
+  <header class="header">
+    <h1 class="header__title">Harsha Ivaturi</h1>
+    <h3 class="header__subtitle">Senior UI Developer</h3>
+    <a href="https://harshai.github.io/">https://harshai.github.io/</a>
+    <address class="contact">
+      <dl>
+        <dt class="contact__title">Mail</dt>
+        <dd class="contact__detail"><a href="mailto:harsha.ivaturi@gmail.com">harsha.ivaturi@gmail.com</a></dd>
+        <dt class="contact__title">Phone</dt>
+        <dd class="contact__detail"> <a href="tel: +918800699773">+91 8800699773</a></dd>
+        <dt class="contact__title">Skype</dt>
+        <dd class="contact__detail">harsha.ivaturi</dd>
+      </dl>
+    </address>
+    <div class="header__actions">
+      <a class="header__action" href="javascript: window.print();">Print</a> |
+      <a class="header__action" href="https://www.dropbox.com/s/b3bafmje8sqxn1h/Harsha%20Ivaturi%27s%20Resume.pdf?dl=0"> Download PDF</a>
+    </div>
+  </header>
 
-<h2>Other interests related to web</h2>
-  <ul>
-    <li>Accessibility and Universal design</li>
-    <li>Typography</li>
-    <li>Interaction design</li>
-    <li>Cryptography</li>
-    <li>Function programming</li>
-  </ul>
+  <div class="content">
+    <section class="section">
+      <h2 class="section__tile">Summary</h2>
+      <p class="intro">I'm a UI developer with an experience of 5+ years in web development. I'm passionate about creating a web that is accessible to all and love playing with latest web technologies.</p>
+    </section>
+    <section class="section">
+      <h2 class="section__title">Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>Progressive enhancement</li>
+        <li>ES3/ES5 and basic ES6</li>
+        <li>SASS/LESS</li>
+        <li>Backbone, Canjs, React and Angular</li>
+        <li>Gulp webpack</li>
+        <li>jQuery</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">Professional Experience</h2>
+      <ul>
+        <li>Xenex</li>
+        <li>MoM</li>
+        <li>Indigo</li>
+        <li>HCAH</li>
+        <li>Channel4</li>
+        <li>Iba</li>
+        <li>PeopleFluent</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">Techniques</h2>
+      <ul>
+        <li>Progressive enhancement</li>
+        <li>Mobile first</li>
+        <li>Atomic design</li>
+        <li>TDD</li>
+        <li>Object oriented JS</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">Pet projects</h2>
+      <ul>
+        <li>Diceware - ES5, uses webcrypto and diceware list</li>
+        <li>Offline first todo app react+redux, localstorage, appcache</li>
+        <li>Polar clock Canvas - javascript, canvas api</li>
+        <li>Hitchbuddy</li>
+        <li>jQuery Leech  jQuery</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">Education</h2>
+      <p>Bachelor of Engineering in Computer Sciences in 2010</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">Other interests related to web</h2>
+      <ul>
+        <li>Accessibility and Universal design</li>
+        <li>Typography</li>
+        <li>Interaction design</li>
+        <li>Cryptography</li>
+        <li>Function programming</li>
+      </ul>
+    </section>
+
+  </div>
+</main>
 
 <!--
   My talks
