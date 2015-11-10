@@ -102,6 +102,7 @@ p {
 .list__title {
   text-transform: uppercase;
   font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 .list__detail {
   margin-bottom: 1.25rem;
@@ -113,6 +114,7 @@ p {
 .list__title > time, .list__title > small{
   color: #9A9A9A;
   text-transform: none;
+  letter-spacing: normal;
   font-size: 0.9rem;
 }
 .list__title > time{
@@ -135,9 +137,6 @@ p {
 @media print, screen and (min-width: 768px) {
   .main{
     max-width: 54em;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 3px;
     box-shadow: 0px 0px 2px #CDCDCD;
   }
   .header {
@@ -145,7 +144,6 @@ p {
     width: 16rem;
     border-bottom: none;
     text-align: right;
-    top: 1rem;
   }
   .header__actions {
     position: static;
@@ -158,30 +156,43 @@ p {
   .content {
     float: right;
     width: calc(100% - 16rem - 1rem);
+    padding-top: 0.5rem;
   }
   body {
     font-size: 1em; /*16px*/
   }
- }
+}
 
- @media print, screen and (max-width: 23.25rem) {
-    .header__actions{
-      display: none;
-    }
- }
+@media print, screen and (max-width: 23.25rem) {
+  .header__actions{
+    display: none;
+  }
+}
 
- @media only print {
-    html{
-      font-size: 8pt;
-    }
-    .main {
-      max-width: none;
-    }
-    strong{
-      font-weight: 400;
-    }
-    .main{
-      width: 100%;
-      box-shadow: none;
-    }
- }
+@media only print {
+  html{
+    font-size: 8pt;
+  }
+  .main {
+    max-width: none;
+    width: 100%;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  .content {
+    padding-top: 0.5rem;
+  }
+  strong{
+    font-weight: 400;
+  }
+
+  .list__detail {
+    margin-bottom: 0.8rem;
+    /*page-break-inside: avoid;*/
+  }
+  .header {
+    position: absolute;
+  }
+
+}
