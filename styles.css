@@ -134,7 +134,7 @@ p {
   margin-left: 1rem;
 }
 
-@media print, screen and (min-width: 768px) {
+@media print, screen and (min-width: 48em) {
   .main{
     max-width: 54em;
     box-shadow: 0px 0px 2px #CDCDCD;
@@ -160,6 +160,12 @@ p {
   }
   body {
     font-size: 1em; /*16px*/
+  }
+}
+
+@media screen and (max-width: 52em) {
+  .list__title > a{
+    display: block;
   }
 }
 
