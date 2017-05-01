@@ -24,6 +24,10 @@ ul, li, dl, dt, dd {
   list-style-type: none;
 }
 
+li {
+	line-height: 1.25rem;
+	margin-bottom: 0.4rem;
+}
 a {
   color: #147;
   text-decoration: underline;
@@ -105,7 +109,7 @@ p {
   letter-spacing: 1px;
 }
 .list__detail {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .list--header > .list__detail {
