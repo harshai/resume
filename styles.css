@@ -201,6 +201,9 @@ p {
     margin-bottom: 0.8rem;
     /*page-break-inside: avoid;*/
   }
+  .list__title {
+    break-after: avoid-page;
+  }
   .header {
     position: absolute;
   }
