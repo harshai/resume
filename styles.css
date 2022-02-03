@@ -5,7 +5,9 @@ html {
   font-size: 100%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -18,15 +20,19 @@ body {
   min-width: 26.25rem;
 }
 
-ul, li, dl, dt, dd {
+ul,
+li,
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 li {
-	line-height: 1.25rem;
-	margin-bottom: 0.4rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.4rem;
 }
 a {
   color: #147;
@@ -37,7 +43,7 @@ a:hover {
   text-decoration: none;
 }
 
-a:active{
+a:active {
   outline: 1px;
 }
 
@@ -45,14 +51,15 @@ strong {
   color: #147;
 }
 
-
-.main{
+.main {
   padding: 0.5rem 1rem;
   width: 100%;
   overflow: auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Quattrocento", serif;
   font-weight: 400;
   margin: 0;
@@ -61,19 +68,21 @@ p {
   line-height: 1.25;
 }
 
-.section--intro, .section {
+.section--intro,
+.section {
   margin-bottom: 2.5rem;
 }
 .section--intro {
-  background-color:
+  background-color: ;
 }
-.section__title{
+.section__title {
   text-transform: uppercase;
 }
-.header, .section {
+.header,
+.section {
   padding-bottom: 0.75rem;
   margin-bottom: 0.75rem;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #ddd;
 }
 .section:last-of-type {
   border-bottom: none;
@@ -95,8 +104,8 @@ p {
   right: 1rem;
 }
 
-
-.list, .list--header{
+.list,
+.list--header {
   font-style: normal;
   margin: 1rem 0 0;
 }
@@ -115,33 +124,32 @@ p {
 .list--header > .list__detail {
   margin-bottom: 0.5rem;
 }
-.list__title > time, .list__title > small{
-  color: #9A9A9A;
+.list__title > time,
+.list__title > small {
+  color: #555;
   text-transform: none;
   letter-spacing: normal;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
-.list__title > time{
+.list__title > time {
   float: right;
 }
 .intro {
   margin-top: 0;
 }
 
-.tech-stack{
-
+.tech-stack {
 }
 
-.bulleted-list > li{
+.bulleted-list > li {
   list-style: disc;
-  list-style-position: inside;
   margin-left: 1rem;
 }
 
 @media print, screen and (min-width: 48em) {
-  .main{
+  .main {
     max-width: 54em;
-    box-shadow: 0px 0px 2px #CDCDCD;
+    box-shadow: 0px 0px 2px #cdcdcd;
   }
   .header {
     position: fixed;
@@ -153,7 +161,7 @@ p {
     position: static;
     margin-top: 4rem;
   }
-  .section{
+  .section {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
@@ -168,19 +176,19 @@ p {
 }
 
 @media screen and (max-width: 52em) {
-  .list__title > a{
+  .list__title > a {
     display: block;
   }
 }
 
 @media print, screen and (max-width: 23.25rem) {
-  .header__actions{
+  .header__actions {
     display: none;
   }
 }
 
 @media only print {
-  html{
+  html {
     font-size: 8pt;
   }
   .main {
@@ -193,7 +201,7 @@ p {
   .content {
     padding-top: 0.5rem;
   }
-  strong{
+  strong {
     font-weight: 400;
   }
 
@@ -207,5 +215,4 @@ p {
   .header {
     position: absolute;
   }
-
 }
